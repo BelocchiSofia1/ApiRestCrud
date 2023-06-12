@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Rest </title>
+    <script type="module" src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header>
+        <h1>Api Rest</h1>
+        <p>Pract. de consumo de recursos a traves de endpoints. Get, Post, Put, y Delete.</p>
+  <p>Utilizamos de prueba el backend de 
+    <a href="https://mockapi.io" target="_blank">MockAPI</a>
+  </p>
+    </header>
+
+    <div>
+    <input id="search" type="text" class="funciones">
+    <button id="open-modal-add" class="funciones">Añadir Usuario</button>
+    <button id="open-modal-modify" class="funciones">Modificar</button>
+    <button id="open-modal-del" class="funciones">Borrar</button>
+    </div>
+    
+<!----------Agregar usuario--------------->
+    <dialog id="modal-add">
+        <form action="" method="dialog" id="form">
+            
+            <label for="name">Nombre:
+                <input type="text" id="name" name="name" requiered/>
+            </label>
+            <label for="lastName">Apellido:
+                <input type="text" id="lastName" name="LastName" requiered/>
+            </label>
+            <label for="address">Domicilio:
+                <input type="text" id="address" name="adress"requiered/>
+            </label>
+            <label for="city">Ciudad:
+             <input type="text" id="city" name="city"requiered/>   
+            </label>
+            <label for="email">Correo Electrónico:
+                <input type="email" id="email" name="email" required />
+            </label>
+            <label for="phone">Teléfono:
+                <input type="tel" id="phone" name="phone" required
+                    pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$" />
+            </label>
+            <div id="botones">
+            
+            <input type="submit" id="submitAdd" class="btn" value="Aceptar" />
+            <input type="reset" id="limUser" class="btn" value="Limpiar" />
+            <input type="button" class="btn" value="Cancelar" id="close-modal-add" />
+            </div>
+        </form>
+    </dialog>
+    
+    <!-----------Modificar usuarios ---------->
+<dialog id="modal-modify">
+    <form action="" method="dialog" id="form">
+
+        <label for="id">Id
+            <input type="number" id="id-modify" name="id"/>
+        </label>
+
+        <label for="name">Nombre
+            <input type="text" id="name-modify" name="name"/>
+        </label>
+
+        <label for="lastName">Apellido
+            <input type="text" id="lastName-modify" name="lastName"/>
+        </label>
+    
+        <label for="address">Domicilio:
+            <input type="text" id="address-modify" name="adress"requiered/>
+        </label>
+        
+        <label for="city">Ciudad:
+         <input type="text" id="city-modify" name="city"requiered/>   
+        </label>
+        
+        <label for="email">Correo Electrónico:
+            <input type="email" id="email-modify" name="email" required />
+        </label>
+        
+        <label for="phone">Teléfono:
+            <input type="tel" id="phone-modify" name="phone" required
+                pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$" />
+        </label>
+        <div class="btn-div">
+            <input type="submit" id="submitModify" class="btn" value="Modificar" />
+            <input type="reset" id="modifyUser" class="btn" value="Limpiar" />
+            <input type="button" class="btn" value="Cancelar" id="close-modal-modify" />
+        </div>
+        
+    </form>
+</dialog>
+<!---------Borrar Usuario---------->
+<dialog id="modal-del">
+    <form action="" method="dialog" id="form">
+
+        <label for="id">Id
+            <input type="number" id="idDelete" name="id" required/>
+        </label>       
+
+            <input id="btn-submit-del" type="submit" value="Aceptar" />
+            <input id="btn-clean-del" type="reset" value="Limpiar" />
+            <input type="button" value="Cancelar" id="close-modal-del" />
+        
+    </form>
+</dialog>
+<!-------Tabla con datos-------->
+    <table id="table">
+       <div id="tbody">
+       </div>
+    </table>
+   
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    background: #b3b3b3;
+    text-align: center;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    place-items: center;
+}
+
+#search{
+width: 25em;
+height: 1em;
+background-color: rgb(209, 203, 116);
+}
+
+.funciones{
+    display: table-cell ;
+    width: 10em;
+    height: 2em;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#open-modal-add {
+    background-color: blueviolet;
+ 
+}
+
+#open-modal-del {
+    background-color: rgb(196, 107, 23);
+  
+
+}
+
+#open-modal-modify {
+    background-color: rgb(87, 136, 241);
+    
+
+}
+#form{
+    text-align: left;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+    background-color: rgb(186, 131, 207);
+    padding: 35px;
+    border-radius: 15px;
+
+}
+
+#modalAdd{
+    border-radius: 15px;
+    background: rgb(51, 6, 51);
+}
+
+input{
+    background-color:rgb(112, 240, 150);
+    display:flow-root;
+    padding: 7px;
+    width: 20em;
+
+}
+
+.btn{
+background-color: rgb(21, 146, 59);
+font-size: 0.89em;
+margin: 5px 0px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
